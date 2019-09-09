@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		164A0FBB2325E9A90007F662 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164A0FBA2325E9A90007F662 /* AboutViewController.swift */; };
 		164A0FBD2325F0A70007F662 /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164A0FBC2325F0A70007F662 /* AboutAuthorViewController.swift */; };
+		16B9E3B123262B6900B45A0E /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 16B9E3B023262B6900B45A0E /* BullsEye.html */; };
 		16DC06772322316A008AC831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC06762322316A008AC831 /* AppDelegate.swift */; };
 		16DC06792322316A008AC831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC06782322316A008AC831 /* ViewController.swift */; };
 		16DC067C2322316A008AC831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DC067A2322316A008AC831 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		164A0FBA2325E9A90007F662 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		164A0FBC2325F0A70007F662 /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
+		16B9E3B023262B6900B45A0E /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		16DC06732322316A008AC831 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DC06762322316A008AC831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16DC06782322316A008AC831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B9E3AE2326273F00B45A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16DC066A2322316A008AC831 = {
 			isa = PBXGroup;
 			children = (
 				16DC06752322316A008AC831 /* BullsEye */,
 				16DC06742322316A008AC831 /* Products */,
+				16B9E3AE2326273F00B45A0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +73,7 @@
 				164A0FBA2325E9A90007F662 /* AboutViewController.swift */,
 				164A0FBC2325F0A70007F662 /* AboutAuthorViewController.swift */,
 				16DC067A2322316A008AC831 /* Main.storyboard */,
+				16B9E3B023262B6900B45A0E /* BullsEye.html */,
 				16DC067D2322316B008AC831 /* Assets.xcassets */,
 				16DC067F2322316B008AC831 /* LaunchScreen.storyboard */,
 				16DC06822322316B008AC831 /* Info.plist */,
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DC06812322316B008AC831 /* LaunchScreen.storyboard in Resources */,
+				16B9E3B123262B6900B45A0E /* BullsEye.html in Resources */,
 				16DC067E2322316B008AC831 /* Assets.xcassets in Resources */,
 				16DC067C2322316A008AC831 /* Main.storyboard in Resources */,
 			);

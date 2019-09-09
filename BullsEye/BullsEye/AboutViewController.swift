@@ -11,18 +11,18 @@ import WebKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var webViewFrame: WKWebView!
+    @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webViewFrame = WKWebView(frame: .init(x: 20, y: 20, width: 528, height: 235))
-        self.view.addSubview(webViewFrame)
+        webView = WKWebView(frame: .init(x: 20, y: 20, width: 528, height: 235))
+        self.view.addSubview(webView)
         
         if let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html") {
             let url = URL(fileURLWithPath: htmlPath)
             let request = URLRequest(url: url)
-            webViewFrame.load(request)
+            webView.load(request)
         }
     }
     

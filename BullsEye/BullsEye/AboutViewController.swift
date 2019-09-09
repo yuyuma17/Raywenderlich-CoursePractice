@@ -16,7 +16,6 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView = WKWebView(frame: .init(x: 20, y: 20, width: 560, height: 200))
         self.view.addSubview(webView)
         
         if let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html") {
@@ -24,6 +23,12 @@ class AboutViewController: UIViewController {
             let request = URLRequest(url: url)
             webView.load(request)
         }
+        
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.5 + 100).isActive = true
+        webView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 1.5).isActive = true
+        webView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 3).isActive = true
+        webView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     @IBAction func backToMainScreen(_ sender: UIButton) {

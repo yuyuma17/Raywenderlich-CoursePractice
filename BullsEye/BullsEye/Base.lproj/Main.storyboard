@@ -193,7 +193,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-O9-Z6F">
-                                <rect key="frame" x="75" y="117" width="275" height="141"/>
+                                <rect key="frame" x="75" y="94" width="275" height="187"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">*** About Me ***
 
@@ -222,16 +222,16 @@ Enjoy it !  </string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eWq-Gu-13b" firstAttribute="centerY" secondItem="rmh-vf-8FT" secondAttribute="centerY" id="3IA-BU-sXf"/>
+                            <constraint firstItem="1gh-O9-Z6F" firstAttribute="top" secondItem="EGf-Nn-Pdc" secondAttribute="bottom" constant="38.5" id="6xt-79-uWy"/>
                             <constraint firstAttribute="bottom" secondItem="C6l-cl-rdZ" secondAttribute="bottom" id="7Nz-0c-Kia"/>
                             <constraint firstItem="C6l-cl-rdZ" firstAttribute="leading" secondItem="rmh-vf-8FT" secondAttribute="leading" id="8S2-QJ-uwt"/>
-                            <constraint firstItem="1gh-O9-Z6F" firstAttribute="top" secondItem="EGf-Nn-Pdc" secondAttribute="bottom" constant="61.5" id="Ik2-aI-bE9"/>
+                            <constraint firstItem="1gh-O9-Z6F" firstAttribute="leading" secondItem="GYr-xa-Jcf" secondAttribute="leading" constant="75" id="8c6-oE-E1M"/>
                             <constraint firstItem="3YG-XW-iQg" firstAttribute="centerX" secondItem="rmh-vf-8FT" secondAttribute="centerX" id="OZZ-83-ynl"/>
-                            <constraint firstItem="eWq-Gu-13b" firstAttribute="leading" secondItem="1gh-O9-Z6F" secondAttribute="trailing" constant="22" id="PYr-Ld-eRg"/>
                             <constraint firstItem="GYr-xa-Jcf" firstAttribute="bottom" secondItem="3YG-XW-iQg" secondAttribute="bottom" constant="30" id="TGK-To-YIz"/>
                             <constraint firstItem="EGf-Nn-Pdc" firstAttribute="top" secondItem="GYr-xa-Jcf" secondAttribute="top" constant="25" id="VBG-1j-Ssx"/>
                             <constraint firstItem="EGf-Nn-Pdc" firstAttribute="centerX" secondItem="rmh-vf-8FT" secondAttribute="centerX" id="VJI-nS-kM4"/>
-                            <constraint firstItem="1gh-O9-Z6F" firstAttribute="leading" secondItem="GYr-xa-Jcf" secondAttribute="leading" constant="75" id="ZNy-Qe-ono"/>
-                            <constraint firstItem="1gh-O9-Z6F" firstAttribute="centerY" secondItem="rmh-vf-8FT" secondAttribute="centerY" id="gsM-VZ-8bg"/>
+                            <constraint firstItem="3YG-XW-iQg" firstAttribute="top" secondItem="1gh-O9-Z6F" secondAttribute="bottom" constant="27" id="cal-KR-fdE"/>
+                            <constraint firstItem="eWq-Gu-13b" firstAttribute="leading" secondItem="1gh-O9-Z6F" secondAttribute="trailing" constant="22" id="kpT-dt-be5"/>
                             <constraint firstItem="GYr-xa-Jcf" firstAttribute="trailing" secondItem="eWq-Gu-13b" secondAttribute="trailing" constant="87" id="tcc-PA-oAQ"/>
                             <constraint firstAttribute="trailing" secondItem="C6l-cl-rdZ" secondAttribute="trailing" id="vAh-2O-8kp"/>
                             <constraint firstItem="C6l-cl-rdZ" firstAttribute="top" secondItem="rmh-vf-8FT" secondAttribute="top" id="zAE-du-5M4"/>

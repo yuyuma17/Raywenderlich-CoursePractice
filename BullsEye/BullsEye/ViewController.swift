@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
+        scoreLabel.text = "0"
+        roundLabel.text = "1"
         round = 1
         
         startNewRound()
@@ -33,19 +35,34 @@ class ViewController: UIViewController {
     @IBAction func showAlert(_ sender: UIButton) {
         
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
-        score = points
+        var points = 100 - difference
+        score = score + points
         
+        let title: String
+        if difference == 0 {
+            title = "Perfect!"
+            points = points + 100
+        }
+        else if difference < 5 {
+            title = "You almost had it!"
+        }
+        else if difference < 10 {
+            title = "Pretty good!"
+        }
+        else {
+            title = "Not even close..."
+        }
+            
         let message = "Your score are \(points) points"
         
-        let alert = UIAlertController(title: "Hello, World!", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Next Round", style: .default) { (UIAlertAction) in
             self.startNewRound()
+            self.round = self.round + 1
+            self.roundLabel.text = String(self.round)
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        getTheScore()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -58,13 +75,19 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         targetLabel.text = String(targetValue)
-        round = round + 1
+        
+        getTheScore()
     }
     
     func getTheScore() {
         scoreLabel.text = String(score)
+    }
+    
+    @IBAction func startOverButton(_ sender: UIButton) {
+        score = 0
+        scoreLabel.text = String(score)
+        round = 1
         roundLabel.text = String(round)
     }
-
 }
 
